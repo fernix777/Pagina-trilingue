@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="{{ g.locale }}" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ThaiTech Solutions - Desarrollo Web en Tailandia{% endblock %}</title>
+    
+    <!-- Accesibilidad y SEO -->
+    <meta name="description" content="Soluciones de desarrollo web personalizadas para empresas en Tailandia. Expertos en diseño web, UX/UI y comercio electrónico.">
+    <meta name="keywords" content="desarrollo web, diseño web, Tailandia, tecnología, UX/UI, e-commerce">
+    <meta name="author" content="ThaiTech Solutions">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.thaitechsolutions.com/">
+    <meta property="og:title" content="ThaiTech Solutions - Desarrollo Web en Tailandia">
+    <meta property="og:description" content="Soluciones de desarrollo web personalizadas para empresas en Tailandia.">
+    <meta property="og:image" content="img/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.thaitechsolutions.com/">
+    <meta property="twitter:title" content="ThaiTech Solutions - Desarrollo Web en Tailandia">
+    <meta property="twitter:description" content="Soluciones de desarrollo web personalizadas para empresas en Tailandia.">
+    <meta property="twitter:image" content="img/logo.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Etiquetas ARIA y Accesibilidad -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        {% include 'components/navbar.html' %}
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        {% include 'components/footer.html' %}
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    <!-- WhatsApp Float Button -->
+    <style>
+        .whatsapp-container {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .whatsapp-float {
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float i {
+            margin-top: 10px;
+        }
+
+        .whatsapp-help-text {
+            background-color: rgba(37, 211, 102, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 10px;
+            white-space: nowrap;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-container:hover .whatsapp-help-text {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+
+    <div class="whatsapp-container">
+        <div class="whatsapp-help-text">
+            {{ g.whatsapp_help_text or 'Texto de ayuda' }} (Locale: {{ g.locale or 'No locale' }})
+        </div>
+        <a href="https://wa.me/66801537505" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Añadir ícono de WhatsApp si no está presente
+        if (!document.querySelector('.fab.fa-whatsapp')) {
+            const script = document.createElement('script');
+            script.src = 'https://kit.fontawesome.com/a076d05399.js';
+            document.head.appendChild(script);
+        }
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

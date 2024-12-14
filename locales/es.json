@@ -1,0 +1,83 @@
+{
+    "navbar": {
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "ThaiTech Solutions",
+        "subtitle": "Soluciones de Desarrollo Web Personalizadas para Tailandia"
+    },
+    "services": {
+        "title": "Nuestros Servicios",
+        "webDevelopment": {
+            "title": "Desarrollo Web",
+            "description": "Creamos sitios web a medida utilizando las últimas tecnologías."
+        },
+        "design": {
+            "title": "Diseño UX/UI",
+            "description": "Diseños modernos y centrados en la experiencia del usuario."
+        },
+        "eCommerce": {
+            "title": "E-commerce",
+            "description": "Soluciones de comercio electrónico adaptadas al mercado tailandés."
+        }
+    },
+    "projects": {
+        "title": "Proyectos Destacados",
+        "project1": {
+            "title": "Plataforma de Turismo",
+            "description": "Desarrollo de sitio web para agencia de turismo líder en Tailandia."
+        },
+        "project2": {
+            "title": "Tienda Online de Artesanías",
+            "description": "E-commerce para artesanos locales con pasarela de pago integrada."
+        }
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "send": "Enviar Mensaje",
+        "placeholders": {
+            "name": "Escribe tu nombre",
+            "email": "Tu correo electrónico",
+            "message": "Escribe tu mensaje aquí"
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados.",
+        "socialIcons": {
+            "facebook": "Síguenos en Facebook",
+            "twitter": "Síguenos en Twitter",
+            "linkedin": "Síguenos en LinkedIn"
+        },
+        "copyright": " ThaiTech Solutions"
+    },
+    "privacyPolicy": {
+        "title": "Política de Privacidad",
+        "sections": {
+            "dataCollection": {
+                "title": "Información que recopilamos",
+                "description": "En ThaiTech Solutions, recopilamos información limitada cuando interactúas con nuestro sitio web, incluyendo:"
+            },
+            "dataUse": {
+                "title": "Uso de la información",
+                "description": "Utilizamos la información recopilada para:"
+            },
+            "dataProtection": {
+                "title": "Protección de datos",
+                "description": "Nos comprometemos a proteger tu información personal con medidas de seguridad estándar de la industria."
+            },
+            "cookies": {
+                "title": "Cookies",
+                "description": "Utilizamos cookies para mejorar la funcionalidad de nuestro sitio web, como recordar preferencias de tema."
+            },
+            "contact": {
+                "title": "Contacto",
+                "description": "Si tienes preguntas sobre esta política, contáctanos a info@thaitechsolutions.com"
+            }
+        }
+    }
+}

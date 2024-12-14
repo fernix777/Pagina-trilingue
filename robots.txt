@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.thaitechsolutions.com/sitemap.xml
+
+# Directorios a no indexar
+Disallow: /admin/
+Disallow: /private/
+
+# Optimización de rastreo
+Crawl-delay: 10

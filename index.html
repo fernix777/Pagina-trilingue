@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThaiTech Solutions - Desarrollo Web en Tailandia</title>
+    
+    <!-- Accesibilidad y SEO -->
+    <meta name="description" content="Soluciones de desarrollo web personalizadas para empresas en Tailandia. Expertos en diseño web, UX/UI y comercio electrónico.">
+    <meta name="keywords" content="desarrollo web, diseño web, Tailandia, tecnología, UX/UI, e-commerce">
+    <meta name="author" content="ThaiTech Solutions">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.thaitechsolutions.com/">
+    <meta property="og:title" content="ThaiTech Solutions - Desarrollo Web en Tailandia">
+    <meta property="og:description" content="Soluciones de desarrollo web personalizadas para empresas en Tailandia.">
+    <meta property="og:image" content="img/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.thaitechsolutions.com/">
+    <meta property="twitter:title" content="ThaiTech Solutions - Desarrollo Web en Tailandia">
+    <meta property="twitter:description" content="Soluciones de desarrollo web personalizadas para empresas en Tailandia.">
+    <meta property="twitter:image" content="img/logo.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Etiquetas ARIA y Accesibilidad -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Mejoras de Accesibilidad -->
+    <style>
+        /* Alto contraste para lectores de pantalla */
+        @media screen and (-ms-high-contrast: active) {
+            body {
+                color: white;
+                background-color: black;
+            }
+        }
+    </style>
+    <style>
+        :root {
+            --primary-color: #3273dc;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" aria-label="Saltar al contenido principal">
+        Saltar al contenido
+    </a>
+
+    <nav class="navbar is-primary" role="navigation" aria-label="Menú principal">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#" aria-label="Inicio de ThaiTech Solutions">
+                <img src="img/logo.png" alt="ThaiTech Solutions Logo">
+            </a>
+            
+            <div class="navbar-burger" data-target="navMenu" aria-label="Menú" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </div>
+        </div>
+
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#servicios" data-i18n-key="navbar.services" aria-label="Servicios">Servicios</a>
+                <a class="navbar-item" href="#proyectos" data-i18n-key="navbar.projects" aria-label="Proyectos">Proyectos</a>
+                <a class="navbar-item" href="#contacto" data-i18n-key="navbar.contact" aria-label="Contacto">Contacto</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="select">
+                        <select id="language-selector" aria-label="Selector de idioma">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                            <option value="th">ภาษาไทย</option>
+                        </select>
+                    </div>
+                    <button id="theme-toggle" class="theme-toggle ml-2" aria-label="Cambiar modo de color">
+                        <span id="theme-icon" aria-hidden="true">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main" tabindex="-1">
+        <section class="hero is-primary is-bold">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title" data-i18n-key="hero.title">ThaiTech Solutions</h1>
+                    <h2 class="subtitle" data-i18n-key="hero.subtitle">Soluciones de Desarrollo Web Personalizadas para Tailandia</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2 class="title has-text-centered" data-i18n-key="services.title">Nuestros Servicios</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3 class="title is-4" data-i18n-key="services.webDevelopment.title">Desarrollo Web</h3>
+                                    <p data-i18n-key="services.webDevelopment.description">Creamos sitios web a medida utilizando las últimas tecnologías.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3 class="title is-4" data-i18n-key="services.design.title">Diseño UX/UI</h3>
+                                    <p data-i18n-key="services.design.description">Diseños modernos y centrados en la experiencia del usuario.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3 class="title is-4" data-i18n-key="services.eCommerce.title">E-commerce</h3>
+                                    <p data-i18n-key="services.eCommerce.description">Soluciones de comercio electrónico adaptadas al mercado tailandés.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section has-background-light">
+            <div class="container">
+                <h2 class="title has-text-centered" data-i18n-key="projects.title">Proyectos Destacados</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3 class="title is-5" data-i18n-key="projects.project1.title">Plataforma de Turismo</h3>
+                                    <p data-i18n-key="projects.project1.description">Desarrollo de sitio web para agencia de turismo líder en Tailandia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3 class="title is-5" data-i18n-key="projects.project2.title">Tienda Online de Artesanías</h3>
+                                    <p data-i18n-key="projects.project2.description">E-commerce para artesanos locales con pasarela de pago integrada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2 class="title has-text-centered" data-i18n-key="contact.title">Contáctanos</h2>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <form>
+                            <div class="field">
+                                <label class="label" data-i18n-key="contact.name">Nombre</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Tu nombre">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" data-i18n-key="contact.email">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="Tu email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" data-i18n-key="contact.message">Mensaje</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Escribe tu mensaje"></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" data-i18n-key="contact.send">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="content has-text-centered">
+            <div class="social-icons" aria-label="Redes sociales">
+                <a href="#" class="social-icon" aria-label="Facebook" data-i18n-key="footer.socialIcons.facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter" data-i18n-key="footer.socialIcons.twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn" data-i18n-key="footer.socialIcons.linkedin">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p data-i18n-key="footer.copyright"> 2024 ThaiTech Solutions</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Botón de WhatsApp -->
+    <style>
+        .whatsapp-container {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .whatsapp-float {
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float i {
+            margin-top: 10px;
+        }
+
+        .whatsapp-help-text {
+            background-color: rgba(37, 211, 102, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 10px;
+            white-space: nowrap;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-container:hover .whatsapp-help-text {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+
+    <div class="whatsapp-container">
+        <div class="whatsapp-help-text">
+            {{ g.whatsapp_help_text }}
+        </div>
+        <a href="https://wa.me/66801537505" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Añadir ícono de WhatsApp si no está presente
+        if (!document.querySelector('.fab.fa-whatsapp')) {
+            const script = document.createElement('script');
+            script.src = 'https://kit.fontawesome.com/a076d05399.js';
+            document.head.appendChild(script);
+        }
+    </script>
+
+    <script>
+        // Lazy loading de imágenes
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        observer.unobserve(img);
+                    }
+                });
+            }, { rootMargin: '50px' });
+
+            images.forEach(img => imageObserver.observe(img));
+        });
+
+        // Mejora de accesibilidad para skip link
+        document.querySelector('.skip-link').addEventListener('click', (e) => {
+            const mainContent = document.getElementById('main-content');
+            mainContent.focus();
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

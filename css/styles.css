@@ -1,0 +1,76 @@
+/* Estilos personalizados para ThaiTech Solutions */
+:root {
+    /* Colores modo claro */
+    --background-light: #f4f4f4;
+    --text-light: #333;
+    --primary-light: #3273dc;
+    --secondary-light: #6573c3;
+    --card-bg-light: #ffffff;
+    --card-shadow-light: rgba(0,0,0,0.1);
+
+    /* Colores modo oscuro */
+    --background-dark: #121212;
+    --text-dark: #e0e0e0;
+    --primary-dark: #5c9eff;
+    --secondary-dark: #8aa4e3;
+    --card-bg-dark: #1e1e1e;
+    --card-shadow-dark: rgba(255,255,255,0.1);
+
+    /* Configuración inicial */
+    --background: var(--background-light);
+    --text: var(--text-light);
+    --primary: var(--primary-light);
+    --secondary: var(--secondary-light);
+    --card-bg: var(--card-bg-light);
+    --card-shadow: var(--card-shadow-light);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --card-bg: var(--card-bg-dark);
+    --card-shadow: var(--card-shadow-dark);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px var(--card-shadow);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 6px var(--card-shadow);
+    color: var(--text);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--card-shadow);
+}
+
+.social-icons .icon {
+    color: var(--primary);
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    color: var(--secondary);
+}

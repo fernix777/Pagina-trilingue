@@ -1,0 +1,69 @@
+{
+    "projectName": {
+        "es": "ThaiTech Solutions",
+        "en": "ThaiTech Solutions",
+        "th": "เทคโนโลยีไทย โซลูชันส์"
+    },
+    "version": "1.0.0",
+    "description": {
+        "es": "Sitio web corporativo de desarrollo web para Tailandia",
+        "en": "Corporate web development website for Thailand",
+        "th": "เว็บไซต์การพัฒนาเว็บสำหรับบริษัทในประเทศไทย"
+    },
+    "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Bulma CSS"
+    ],
+    "contact": {
+        "email": "info@thaitechsolutions.com",
+        "phone": {
+            "es": "+66 (0) 123 456 789",
+            "en": "+66 (0) 123 456 789", 
+            "th": "+๖๖ (๐) ๑๒๓ ๔๕๖ ๗๘๙"
+        },
+        "address": {
+            "es": "Bangkok, Tailandia",
+            "en": "Bangkok, Thailand",
+            "th": "กรุงเทพมหานคร ประเทศไทย"
+        }
+    },
+    "socialMedia": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#"
+    },
+    "themeSettings": {
+        "defaultTheme": "light",
+        "supportsDarkMode": true,
+        "themeToggleLabels": {
+            "es": {
+                "light": "Modo Claro",
+                "dark": "Modo Oscuro"
+            },
+            "en": {
+                "light": "Light Mode", 
+                "dark": "Dark Mode"
+            },
+            "th": {
+                "light": "โหมดสว่าง",
+                "dark": "โหมดมืด"
+            }
+        }
+    },
+    "languages": {
+        "es": {
+            "name": "Español",
+            "code": "es"
+        },
+        "en": {
+            "name": "English",
+            "code": "en"
+        },
+        "th": {
+            "name": "ภาษาไทย",
+            "code": "th"
+        }
+    }
+}

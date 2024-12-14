@@ -1,0 +1,15 @@
+msgid ""
+msgstr ""
+"Project-Version: ThaiTech Solutions\n"
+"Report-Msgid-Bugs-To: ติดต่อ@thaitechsolutions.com\n"
+"POT-Creation-Date: 2024-01-14 10:00+0700\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Mensaje recibido correctamente"
+msgstr "ได้รับข้อความของคุณแล้ว เราจะติดต่อกลับโดยเร็ว"
+
+msgid "¿En qué podemos ayudarte?"
+msgstr "{{ lang('th') }} เราสามารถช่วยคุณได้อย่างไร? (TH)"
