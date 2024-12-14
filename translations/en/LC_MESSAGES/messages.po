@@ -13,3 +13,60 @@ msgstr "Your message has been received. We will contact you soon."
 
 msgid "¿En qué podemos ayudarte?"
 msgstr "How can we help you? (EN)"
+
+msgid "services.webDevelopment.title"
+msgstr "Web Development"
+
+msgid "services.webDevelopment.description"
+msgstr "We create modern and responsive websites for your business in Thailand."
+
+msgid "services.uxui.title"
+msgstr "UX/UI Design"
+
+msgid "services.uxui.description"
+msgstr "Intuitive and attractive user experiences that connect with your audience."
+
+msgid "services.ecommerce.title"
+msgstr "E-commerce"
+
+msgid "services.ecommerce.description"
+msgstr "Customized e-commerce solutions for the Thai market."
+
+msgid "services.card2.title"
+msgstr "Custom Web Development"
+
+msgid "services.card2.description"
+msgstr "Tailored web solutions that perfectly adapt to your business in Thailand."
+
+msgid "services.card3.title"
+msgstr "Technology Consulting"
+
+msgid "services.card3.description"
+msgstr "Expert advice to optimize your digital strategy and technological transformation."
+
+msgid "projects.title"
+msgstr "Our Projects"
+
+msgid "projects.ecommerce.title"
+msgstr "E-commerce Platform for SMEs"
+
+msgid "projects.ecommerce.description"
+msgstr "Online store development for small Thai businesses."
+
+msgid "projects.tourism.title"
+msgstr "Tourism Experience App"
+
+msgid "projects.tourism.description"
+msgstr "Mobile app to discover destinations in Thailand."
+
+msgid "projects.management.title"
+msgstr "Business Management System"
+
+msgid "projects.management.description"
+msgstr "Comprehensive solution for business administration."
+
+msgid "technologies.title"
+msgstr "Languages We Master"
+
+msgid "technologies.subtitle"
+msgstr "Innovative solutions with the best tools in the market"

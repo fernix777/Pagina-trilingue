@@ -13,3 +13,60 @@ msgstr "Su mensaje ha sido recibido. Nos pondremos en contacto pronto."
 
 msgid "¿En qué podemos ayudarte?"
 msgstr "¿En qué podemos ayudarte? (ES)"
+
+msgid "services.webDevelopment.title"
+msgstr "Desarrollo Web"
+
+msgid "services.webDevelopment.description"
+msgstr "Creamos sitios web modernos y responsivos para tu negocio en Tailandia."
+
+msgid "services.uxui.title"
+msgstr "Diseño UX/UI"
+
+msgid "services.uxui.description"
+msgstr "Experiencias de usuario intuitivas y atractivas que conectan con tu audiencia."
+
+msgid "services.ecommerce.title"
+msgstr "E-commerce"
+
+msgid "services.ecommerce.description"
+msgstr "Soluciones de comercio electrónico personalizadas para el mercado tailandés."
+
+msgid "services.card2.title"
+msgstr "Desarrollo Web Personalizado"
+
+msgid "services.card2.description"
+msgstr "Soluciones web a medida que se adaptan perfectamente a tu negocio en Tailandia."
+
+msgid "services.card3.title"
+msgstr "Consultoría Tecnológica"
+
+msgid "services.card3.description"
+msgstr "Asesoramiento experto para optimizar tu estrategia digital y transformación tecnológica."
+
+msgid "projects.title"
+msgstr "Nuestros Proyectos"
+
+msgid "projects.ecommerce.title"
+msgstr "Plataforma E-commerce para PYMES"
+
+msgid "projects.ecommerce.description"
+msgstr "Desarrollo de tienda online para pequeñas empresas tailandesas."
+
+msgid "projects.tourism.title"
+msgstr "App de Experiencias Turísticas"
+
+msgid "projects.tourism.description"
+msgstr "Aplicación móvil para descubrir destinos en Tailandia."
+
+msgid "projects.management.title"
+msgstr "Sistema de Gestión Empresarial"
+
+msgid "projects.management.description"
+msgstr "Solución integral para administración de negocios."
+
+msgid "technologies.title"
+msgstr "Lenguajes que Manejamos"
+
+msgid "technologies.subtitle"
+msgstr "Soluciones innovadoras con las mejores herramientas del mercado"

@@ -1,28 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+    
+    <!-- Página principal -->
     <url>
         <loc>https://www.thaitechsolutions.com/</loc>
         <lastmod>2024-01-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="es"
-            href="https://www.thaitechsolutions.com/es/"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://www.thaitechsolutions.com/en/"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="th"
-            href="https://www.thaitechsolutions.com/th/"/>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+        </geo:geo>
     </url>
+
+    <!-- Regiones de Tailandia -->
     <url>
-        <loc>https://www.thaitechsolutions.com/privacy-policy</loc>
+        <loc>https://www.thaitechsolutions.com/bangkok</loc>
         <lastmod>2024-01-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+            <geo:region>TH-10</geo:region>
+        </geo:geo>
+    </url>
+
+    <url>
+        <loc>https://www.thaitechsolutions.com/chiang-mai</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+            <geo:region>TH-50</geo:region>
+        </geo:geo>
+    </url>
+
+    <url>
+        <loc>https://www.thaitechsolutions.com/phuket</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+            <geo:region>TH-83</geo:region>
+        </geo:geo>
+    </url>
+
+    <url>
+        <loc>https://www.thaitechsolutions.com/krabi</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+            <geo:region>TH-81</geo:region>
+        </geo:geo>
+    </url>
+
+    <url>
+        <loc>https://www.thaitechsolutions.com/pattaya</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+            <geo:region>TH-20</geo:region>
+        </geo:geo>
+    </url>
+
+    <!-- Servicios -->
+    <url>
+        <loc>https://www.thaitechsolutions.com/servicios</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+        </geo:geo>
+    </url>
+
+    <!-- Contacto -->
+    <url>
+        <loc>https://www.thaitechsolutions.com/contacto</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <geo:geo>
+            <geo:country>TH</geo:country>
+        </geo:geo>
     </url>
 </urlset>

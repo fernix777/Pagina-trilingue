@@ -10,7 +10,19 @@
     <meta name="keywords" content="desarrollo web, diseño web, Tailandia, tecnología, UX/UI, e-commerce">
     <meta name="author" content="ThaiTech Solutions">
     <meta name="robots" content="index, follow">
-    
+   <!-- Geolocalización y SEO Local para Tailandia -->
+<meta name="geo.region" content="TH" />
+<meta name="geo.placename" content="Bangkok, Tailandia" />
+<meta name="geo.position" content="13.7563;100.5018" />
+<meta name="ICBM" content="13.7563, 100.5018" />
+
+<!-- Información de negocio local -->
+<meta name="business:contact_data:street_address" content="Bangkok, Tailandia">
+<meta name="business:contact_data:country_name" content="Tailandia">
+
+<!-- Open Graph localizadas -->
+<meta property="og:locale" content="th_TH" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.thaitechsolutions.com/">
@@ -35,7 +47,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+   <!-- Datos estructurados de Schema.org para SEO local -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ThaiTech Solutions",
+      "image": "https://www.thaitechsolutions.com/img/logo.svg",
+      "url": "https://www.thaitechsolutions.com",
+      "telephone": "+66 80 153 7505",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bangkok",
+        "addressLocality": "Bangkok",
+        "addressRegion": "Bangkok",
+        "postalCode": "10100",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.7563,
+        "longitude": 100.5018
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": [
+        "Bangkok",
+        "Chiang Mai", 
+        "Phuket",
+        "Pattaya",
+        "Krabi"
+      ],
+      "serviceArea": "Tailandia"
+    }
+    </script>
     {% block extra_css %}{% endblock %}
 </head>
 <body>

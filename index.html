@@ -35,7 +35,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <!-- Preload para recursos críticos -->
+<link rel="preload" href="css/styles.css" as="style">
+<link rel="preload" href="js/main.js" as="script">
+
+<!-- Progressive Enhancement -->
+<noscript>
+    <style>
+        .section { opacity: 1; transform: translateY(0); }
+    </style>
+</noscript>
     <!-- Mejoras de Accesibilidad -->
     <style>
         /* Alto contraste para lectores de pantalla */
@@ -131,33 +140,42 @@
         <section id="servicios" class="section">
             <div class="container">
                 <h2 class="title has-text-centered" data-i18n-key="services.title">Nuestros Servicios</h2>
-                <div class="columns">
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h3 class="title is-4" data-i18n-key="services.webDevelopment.title">Desarrollo Web</h3>
-                                    <p data-i18n-key="services.webDevelopment.description">Creamos sitios web a medida utilizando las últimas tecnologías.</p>
+                <div class="columns is-multiline is-centered">
+                    <div class="column is-4 service-card">
+                        <div class="service-card-content">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="service-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <h3 class="title is-4" data-i18n-key="services.ecommerce.title">Soluciones E-commerce</h3>
+                                    <p data-i18n-key="services.ecommerce.description">Soluciones de comercio electrónico personalizadas para el mercado tailandés.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h3 class="title is-4" data-i18n-key="services.design.title">Diseño UX/UI</h3>
-                                    <p data-i18n-key="services.design.description">Diseños modernos y centrados en la experiencia del usuario.</p>
+                    <div class="column is-4 service-card">
+                        <div class="service-card-content">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="service-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h3 class="title is-4" data-i18n-key="services.card2.title">Desarrollo Web Personalizado</h3>
+                                    <p data-i18n-key="services.card2.description">Soluciones web a medida que se adaptan perfectamente a tu negocio en Tailandia.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h3 class="title is-4" data-i18n-key="services.eCommerce.title">E-commerce</h3>
-                                    <p data-i18n-key="services.eCommerce.description">Soluciones de comercio electrónico adaptadas al mercado tailandés.</p>
+                    <div class="column is-4 service-card">
+                        <div class="service-card-content">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="service-icon">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <h3 class="title is-4" data-i18n-key="services.card3.title">Consultoría Tecnológica</h3>
+                                    <p data-i18n-key="services.card3.description">Asesoramiento experto para optimizar tu estrategia digital y transformación tecnológica.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,37 +184,117 @@
             </div>
         </section>
 
-        <section id="proyectos" class="section has-background-light">
+        <section id="tecnologias" class="tech-logos-container">
+            <div class="container has-text-centered">
+                <h2 class="title is-3 mb-4" data-i18n-key="technologies.title">Tecnologías que Dominamos</h2>
+                <p class="subtitle is-5 mb-6" data-i18n-key="technologies.subtitle">Soluciones innovadoras con las mejores herramientas del mercado</p>
+            </div>
+            <div class="tech-logos-track">
+                <div class="tech-logo">
+                    <img src="img/logos/html5.png" alt="HTML5 Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/css3.png" alt="CSS3 Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/javascript.png" alt="JavaScript Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/nodejs.png" alt="Node.js Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/php.png" alt="PHP Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/react.png" alt="React Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/angular.png" alt="Angular Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/python.png" alt="Python Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/django.png" alt="Django Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/flutter.png" alt="Flutter Logo">
+                </div>
+                
+                <!-- Duplicados para transición continua -->
+                <div class="tech-logo">
+                    <img src="img/logos/html5.png" alt="HTML5 Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/css3.png" alt="CSS3 Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/javascript.png" alt="JavaScript Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/nodejs.png" alt="Node.js Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/php.png" alt="PHP Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/react.png" alt="React Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/angular.png" alt="Angular Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/python.png" alt="Python Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/django.png" alt="Django Logo">
+                </div>
+                <div class="tech-logo">
+                    <img src="img/logos/flutter.png" alt="Flutter Logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
             <div class="container">
-                <h2 class="title has-text-centered" data-i18n-key="projects.title">Proyectos Destacados</h2>
-                <div class="columns">
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="img/proyecto1.jpg" alt="Proyecto 1">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <h3 class="title is-5" data-i18n-key="projects.project1.title">Plataforma de Turismo</h3>
-                                    <p data-i18n-key="projects.project1.description">Desarrollo de sitio web para agencia de turismo líder en Tailandia.</p>
-                                </div>
+                <h2 class="title has-text-centered" data-i18n-key="projects.title">Nuestros Proyectos</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="img/proyecto-1.jpg" alt="Proyecto E-commerce Tailandés" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <h3 class="title is-5" data-i18n-key="projects.ecommerce.title">Plataforma E-commerce para PYMES</h3>
+                            <p data-i18n-key="projects.ecommerce.description">Desarrollo de tienda online para pequeñas empresas tailandesas.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Thailand</span>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="img/proyecto2.jpg" alt="Proyecto 2">
-                                </figure>
+                    <div class="project-card">
+                        <img src="img/proyecto-2.jpg" alt="Aplicación de Turismo" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <h3 class="title is-5" data-i18n-key="projects.tourism.title">App de Experiencias Turísticas</h3>
+                            <p data-i18n-key="projects.tourism.description">Aplicación móvil para descubrir destinos en Tailandia.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Firebase</span>
+                                <span class="project-tag">Turismo</span>
                             </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <h3 class="title is-5" data-i18n-key="projects.project2.title">Tienda Online de Artesanías</h3>
-                                    <p data-i18n-key="projects.project2.description">E-commerce para artesanos locales con pasarela de pago integrada.</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/proyecto-3.jpg" alt="Sistema de Gestión" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <h3 class="title is-5" data-i18n-key="projects.management.title">Sistema de Gestión Empresarial</h3>
+                            <p data-i18n-key="projects.management.description">Solución integral para administración de negocios.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Django</span>
+                                <span class="project-tag">ERP</span>
                             </div>
                         </div>
                     </div>
@@ -260,71 +358,6 @@
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
     
-    <!-- Botón de WhatsApp -->
-    <style>
-        .whatsapp-container {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            display: flex;
-            align-items: center;
-            z-index: 100;
-        }
-
-        .whatsapp-float {
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            margin-left: 10px;
-        }
-
-        .whatsapp-float:hover {
-            background-color: #128c7e;
-            transform: scale(1.1);
-        }
-
-        .whatsapp-float i {
-            margin-top: 10px;
-        }
-
-        .whatsapp-help-text {
-            background-color: rgba(37, 211, 102, 0.9);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            margin-right: 10px;
-            white-space: nowrap;
-            box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-            opacity: 0;
-            transform: translateX(20px);
-            transition: all 0.3s ease;
-        }
-
-        .whatsapp-container:hover .whatsapp-help-text {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    </style>
-
-    <div class="whatsapp-container">
-        <div class="whatsapp-help-text">
-            {{ g.whatsapp_help_text }}
-        </div>
-        <a href="https://wa.me/66801537505" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
     <script>
         // Añadir ícono de WhatsApp si no está presente
         if (!document.querySelector('.fab.fa-whatsapp')) {

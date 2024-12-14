@@ -74,3 +74,251 @@ body {
 .social-icons .icon:hover {
     color: var(--secondary);
 }
+/* Transiciones suaves para elementos */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto hover para botones */
+.button {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Efecto Neon para Tarjetas de Servicios - Versión Optimizada */
+.service-card {
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: calc(33.33% - 30px);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        0deg, 
+        transparent, 
+        #3273dc, 
+        #3273dc, 
+        #3273dc, 
+        transparent
+    );
+    transform-origin: bottom center;
+    animation: borderNeon 3s linear infinite;
+    z-index: 1;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: white;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.service-card-content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+}
+
+@keyframes borderNeon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Variaciones de color para diferentes tarjetas */
+.service-card:nth-child(1)::before {
+    background: linear-gradient(0deg, 
+        transparent, 
+        #3273dc, 
+        #3273dc, 
+        #3273dc, 
+        transparent
+    );
+}
+
+.service-card:nth-child(2)::before {
+    background: linear-gradient(0deg, 
+        transparent, 
+        #48c774, 
+        #48c774, 
+        #48c774, 
+        transparent
+    );
+}
+
+.service-card:nth-child(3)::before {
+    background: linear-gradient(0deg, 
+        transparent, 
+        #ffdd57, 
+        #ffdd57, 
+        #ffdd57, 
+        transparent
+    );
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Estilos para Sección de Proyectos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.project-card:hover .project-overlay {
+    height: 100%;
+}
+
+.project-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-content {
+    opacity: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.project-tag {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+/* Sección de Tecnologías */
+.tech-logos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.tech-logos-track {
+    display: inline-flex;
+    width: 200%;  /* Doble ancho para acomodar los logos duplicados */
+    animation: scroll 20s linear infinite;
+}
+
+.tech-logos-track:hover {
+    animation-play-state: paused;
+}
+
+.tech-logo {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tech-logo img {
+    max-width: 100px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50%));  /* Mueve la mitad del ancho */
+    }
+}

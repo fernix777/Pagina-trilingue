@@ -1,11 +1,33 @@
+# Configuración de robots.txt para SEO en Tailandia
+
+# Permitir indexación solo para dominios tailandeses
 User-agent: *
 Allow: /
 
+# Sitios específicos de Tailandia
 Sitemap: https://www.thaitechsolutions.com/sitemap.xml
 
-# Directorios a no indexar
-Disallow: /admin/
-Disallow: /private/
+# Bloquear indexación en otros idiomas o regiones
+Disallow: /en/
+Disallow: /es/
 
-# Optimización de rastreo
+# Regiones específicas de Tailandia
+# Bangkok
+Allow: /bangkok/
+# Chiang Mai
+Allow: /chiang-mai/
+# Phuket
+Allow: /phuket/
+# Krabi
+Allow: /krabi/
+# Pattaya
+Allow: /pattaya/
+
+# Dominios geo-específicos
+Host: www.thaitechsolutions.com
+
+# Tiempo de revisita para rastreadores
 Crawl-delay: 10
+
+# Información de contacto
+Webmaster: contacto@thaitechsolutions.com
